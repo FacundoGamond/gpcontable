@@ -27,6 +27,13 @@ $titlesColor: rgba(0, 0, 0, 0.555);
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Logos";
+    src: url(../fonts/Smartphone.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 //Styles
 body {
     background-image: url("../images/backgroundjpg");
