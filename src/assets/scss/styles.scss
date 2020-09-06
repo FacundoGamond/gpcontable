@@ -126,8 +126,9 @@ body {
 
 .center {
     display: block;
-    margin-top: 100px;
     width: 95%;
+    margin: 0px auto;
+    margin-top: 100px;
 
     #home {
         width: 90%;
@@ -135,7 +136,7 @@ body {
 
         carousel {
             display: block;
-            margin-left: 8.5%;
+            margin-left: 5.3%;
             z-index: 88;
         }
     }
