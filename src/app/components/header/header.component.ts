@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -14,7 +13,9 @@ export class HeaderComponent implements OnInit {
 
   goTo(component){
     console.log(component)
-    $(component).animate({},500)
+    $('html, body').animate({
+      scrollTop: $(component).offset().top
+    }, 1000);
   }
 
 }

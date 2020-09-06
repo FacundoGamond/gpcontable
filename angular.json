@@ -30,7 +30,7 @@
             "styles": [
               "src/assets/scss/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/jquery/dist/jquery.js"]
           },
           "configurations": {
             "production": {
