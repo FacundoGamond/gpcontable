@@ -41,6 +41,10 @@ body {
     background-size: 100%;
 }
 
+.active {
+    border-bottom: 4px solid white;
+}
+
 #socialmedia {
     display: block;
     position: fixed;

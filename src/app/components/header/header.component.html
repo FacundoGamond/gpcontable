@@ -7,10 +7,10 @@
 
     <nav id="menu">
         <ul>
-            <li><span (click)="goTo('#home')">Inicio</span></li>
-            <li><span (click)="goTo('#services')">Servicios</span></li>
-            <li><span (click)="goTo('#about')">Nosotros</span></li>
-            <li><span (click)="goTo('#contact')">Contacto</span></li>
+            <li><span (click)="goTo('#home')" [ngClass]="{'active': componentActive == '#home'}">Inicio</span></li>
+            <li><span (click)="goTo('#services')" [ngClass]="{'active': componentActive == '#services'}">Servicios</span></li>
+            <li><span (click)="goTo('#about')" [ngClass]="{'active': componentActive == '#about'}">Nosotros</span></li>
+            <li><span (click)="goTo('#contact')" [ngClass]="{'active': componentActive == '#contact'}">Contacto</span></li>
         </ul>
     </nav>
 
