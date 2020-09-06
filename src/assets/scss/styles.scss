@@ -41,6 +41,20 @@ body {
     background-size: 100%;
 }
 
+#socialmedia{
+    display: block;
+    position: fixed;
+    top: 90%;
+    right: 20px;
+
+    a{
+        font-family: "Logos";
+        font-size: 50px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
 #header {
     display: block;
     position: fixed;
