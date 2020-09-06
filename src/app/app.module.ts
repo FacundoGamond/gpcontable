@@ -5,12 +5,14 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
