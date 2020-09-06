@@ -87,7 +87,7 @@ body {
         transition: 500ms all;
 
         span {
-            display: block; 
+            display: block;
             float: left;
             height: 60px;
             width: 60px;
@@ -128,7 +128,6 @@ body {
             font-weight: normal;
             color: $titlesColor;
         }
-
     }
 
     #menu {
@@ -249,7 +248,7 @@ body {
 
             }
 
-            .special-card{
+            .special-card {
                 top: -100px;
             }
         }
@@ -272,6 +271,28 @@ body {
                 opacity: 1;
                 transform: translateX(0%);
             }
+        }
+
+    }
+
+    #about {
+        display: block;
+        width: 90%;
+        height: 100vh;
+        margin: 0px auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        h2 {
+            font-family: "Banks";
+            font-size: 50px;
+            text-align: center;
+            width: 85%;
+            margin: 0px auto;
+            color: $titlesColor;
+            border-bottom: 1px solid $titlesColor;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
         }
 
     }
