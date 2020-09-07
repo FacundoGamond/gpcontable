@@ -3,13 +3,13 @@
     <div *ngIf="!sended" id="loading">
         <img src="../../../assets/img/load.gif">
     </div>
-    <div *ngIf="sended" id="contact">
+    <div *ngIf="sended" id="contact-center">
         <form id="contact-form" #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
             <div>
                 <label for="name">Nombre</label><br>
                 <input type="text" name="name" #name="ngModel" [(ngModel)]="emailData.name" required><br>
                 <span class="required-form" *ngIf="name.touched && !name.valid">
-                    Nombre obligatorio
+                    *Nombre obligatorio
                 </span>
             </div>
 
@@ -17,28 +17,28 @@
                 <label for="last_name">Apellido</label><br>
                 <input type="text" name="last_name" #last_name="ngModel" [(ngModel)]="emailData.lastName" required>
                 <span class="required-form" *ngIf="last_name.touched && !last_name.valid">
-                    Apellido obligatorio
+                    *Apellido obligatorio
                 </span>
             </div>
             <div>
                 <label for="email">Email</label><br>
                 <input type="text" name="email" #email="ngModel" [(ngModel)]="emailData.email" required>
                 <span class="required-form" *ngIf="email.touched && !email.valid">
-                    Email obligatorio
+                    *Email obligatorio
                 </span>
             </div>
             <div>
                 <label for="phone">Telefono/Celular</label><br>
                 <input type="number" name="phone" #phone="ngModel" [(ngModel)]="emailData.phone" required>
                 <span class="required-form" *ngIf="phone.touched && !phone.valid">
-                    Telefono obligatorio
+                    *Telefono obligatorio
                 </span>
             </div>
             <div class="form-big">
                 <label for="consult">Consulta</label><br>
                 <textarea name="consult" #consult="ngModel" [(ngModel)]="emailData.consult" required></textarea>
-                <span class="required-form-big" *ngIf="consult.touched && !consult.valid">
-                    Consulta obligatoria
+                <span class="required-form" *ngIf="consult.touched && !consult.valid">
+                    *Consulta obligatoria
                 </span>
             </div>
             <br>
