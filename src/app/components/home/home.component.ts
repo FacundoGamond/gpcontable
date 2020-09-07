@@ -10,13 +10,13 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+
     this.images = [
-      {path: '../../assets/images/1.jpg'},
-      {path: '../../assets/images/2.jpg'},
-      {path: '../../assets/images/3.jpg'},
-      
-  ]
+      { path: '../../assets/images/1.jpg' },
+      { path: '../../assets/images/2.jpg' },
+      { path: '../../assets/images/3.jpg' },
+
+    ]
   }
 
 }
