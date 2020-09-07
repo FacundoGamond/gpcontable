@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import swal from 'sweetalert';
+import swal from 'sweetalert';
 import { ProjectService } from '../../services/project.service';
 import { Email } from '../../models/email'
 
@@ -28,11 +28,11 @@ export class ContactComponent implements OnInit {
     this._projectService.sendEmail(this.emailData).subscribe(
       res => {
         if (res) {
-          /*swal({
+          swal({
             title: "Consulta enviada!",
             text: "Nuestros acesores se pondran en contacto a la brevedad!",
             icon: "success"
-          });*/
+          });
 
           this.sended = true;
           
@@ -40,11 +40,11 @@ export class ContactComponent implements OnInit {
       },
       err => {
         console.log(err);
-        /*swal({
+        swal({
           title: "Consulta no enviada!",
           text: "Ocurrio un error, intentelo más tarde",
           icon: "error"
-        });*/
+        });
         this.sended = true;
       });
       form.reset();

@@ -392,7 +392,6 @@ body {
 
         #contact-center {
             width: 100%;
-            font-family: "Banks";
 
             #contact-form {
                 display: block;
@@ -411,6 +410,7 @@ body {
                         display: block;
                         color: red;
                         margin-bottom: 20px;
+                        font-family: "Banks";
                     }
 
                     input[type="text"],
@@ -424,11 +424,13 @@ body {
                         border-radius: 5px;
                         transition: 300ms all;
                         padding-left: 5px;
+                        font-family: "Banks";
                     }
 
                     label {
                         font-size: 25px;
                         color: $titlesColor;
+                        font-family: "Banks";
                     }
                 }
 
@@ -451,6 +453,7 @@ body {
                         border: 1px solid #ccc;
                         padding: 10px;
                         transition: 300ms all;
+                        font-family: "Banks";
                     }
 
                     input[type="file"],

@@ -1,7 +1,7 @@
 <section id="contact">
     <h2>Contacto</h2>
     <div *ngIf="!sended" id="loading">
-        <img src="../../../assets/img/load.gif">
+        <img src="../../../assets/images/load.gif">
     </div>
     <div *ngIf="sended" id="contact-center">
         <form id="contact-form" #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
