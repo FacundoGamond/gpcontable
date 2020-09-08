@@ -103,6 +103,7 @@ body {
         span {
             display: block;
             float: left;
+            width: 50%;
             height: 60px;
             width: 60px;
             line-height: 57px;
@@ -117,11 +118,11 @@ body {
 
         p {
             display: block;
-            position: fixed;
-            left: 200px;
-            width: 20%;
+            float: left;
+            width: 50%;
             color: white;
             font-size: 35px;
+            margin-left: 1%;
             line-height: 57px;
             font-weight: bold;
             transition: 500ms all;
@@ -130,17 +131,10 @@ body {
     }
 
     #logo:hover {
-
+        transform: scale(1.08);
         span {
-            font-weight: bold;
-            text-align: left;
-            padding-left: 3%;
-            width: 230px;
-        }
-
-        p {
-            font-weight: normal;
-            color: $titlesColor;
+            background-color: #444;
+            color: white;
         }
     }
 
@@ -287,7 +281,6 @@ body {
                 transform: translateX(0%);
             }
         }
-
     }
 
     #about {
