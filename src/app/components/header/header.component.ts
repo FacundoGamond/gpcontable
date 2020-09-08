@@ -8,7 +8,10 @@ import ScrollOut from "scroll-out";
 })
 export class HeaderComponent implements OnInit {
   public componentActive: string;
-  constructor() { }
+  public menuToggle: boolean
+  constructor() {
+    this.menuToggle = true;
+   }
 
   ngOnInit(): void {
     ScrollOut({
@@ -21,6 +24,22 @@ export class HeaderComponent implements OnInit {
       scrollTop: $(component).offset().top
     }, 1000);
     this.componentActive=component;
+    this.toggleMenu();
+  }
+
+  toggleMenu() {
+    console.log("click")
+    if (this.menuToggle == false) {
+      $("#menu-responsive").animate({
+        height: '0px'
+      }, 300)
+      this.menuToggle = true;
+    } else {
+      $("#menu-responsive").animate({
+        height: '309px'
+      }, 300)
+      this.menuToggle = false;
+    }
 
   }
 
