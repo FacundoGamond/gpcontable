@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import swal from 'sweetalert';
 import { ProjectService } from '../../services/project.service';
 import { Email } from '../../models/email'
@@ -48,6 +48,10 @@ export class ContactComponent implements OnInit {
         this.sended = true;
       });
       form.reset();
+  }
+
+  ngDoCheck(){
+    console.log($("#contact").attr( "data-scroll" ));
   }
 
 }
