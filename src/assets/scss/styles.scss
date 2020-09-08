@@ -65,7 +65,7 @@ body {
     top: 90%;
     right: 20px;
     transition: 300ms all;
-    z-index: 100;
+    z-index: 90;
 
     a {
         font-family: "Logos";
@@ -380,7 +380,7 @@ body {
                     img {
                         display: block;
                         float: left;
-                        width: 50%;
+                        //width: 50%;
                         margin-top: 18px;
                         margin-left: 5%;
                         width: 150px;
@@ -564,6 +564,7 @@ footer {
     background-color: #444;
     color: white;
     text-align: center;
+    z-index: 99;
 
     p {
         display: block;
@@ -647,6 +648,7 @@ footer {
         #info {
             #persons {
                 width: 100% !important;
+
                 .person {
                     width: 100% !important;
                     margin-left: 0% !important;
@@ -654,4 +656,54 @@ footer {
             }
         }
     }
+}
+
+@media (max-width: 500px) {
+    #header {
+        #logo {
+            padding-left: 3% !important;
+            width: 36% !important;
+        }
+    }
+
+    #services {
+        height: 3000px !important;
+
+        article {
+            display: block;
+            float: none !important;
+            clear: both !important;
+            width: 100% !important;
+            margin-bottom: 20px !important;
+        }
+
+        .special-card {
+            top: -64px !important;
+        }
+    }
+
+    #about {
+        .person {
+            border-radius: 100px 10px 10px 100px !important;
+            .data {
+                width: 35% !important;
+                h4{
+                   font-size: 20px !important;
+                }
+
+            }
+        }
+    }
+
+    #contact {
+        #contact-form {
+            div {
+                float: none !important;
+                clear: both !important;
+                width: 100% !important;
+            }
+
+        }
+    }
+
 }
