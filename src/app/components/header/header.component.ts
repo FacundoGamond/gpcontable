@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import ScrollOut from "scroll-out";
 
 @Component({
@@ -22,6 +22,21 @@ export class HeaderComponent implements OnInit {
     }, 1000);
     this.componentActive=component;
 
+  }
+
+  ngDoCheck(){
+    if($("#home").attr("data-scroll") == "in"){
+      this.componentActive="#home"
+    }
+    if($("#services").attr("data-scroll") == "in"){
+      this.componentActive="#services"
+    }
+    if($("#about").attr("data-scroll") == "in"){
+      this.componentActive="#about"
+    }
+    if($("#contact").attr("data-scroll") == "in"){
+      this.componentActive="#contact"
+    }
   }
 
 }
