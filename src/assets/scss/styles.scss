@@ -52,7 +52,7 @@ $bluecolor: rgba(0, 0, 0, 0.555);
 body {
     background-image: url("../images/backgroundjpg");
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .active {
@@ -132,6 +132,7 @@ body {
 
     #logo:hover {
         transform: scale(1.08);
+
         span {
             background-color: #444;
             color: white;
@@ -232,6 +233,7 @@ body {
                 font-size: 200px;
                 text-align: center;
                 color: white;
+                transition: 500ms all;
             }
 
             h3 {
@@ -270,6 +272,7 @@ body {
 
             span {
                 color: black;
+                font-size: 150px;
             }
 
             h3 {
@@ -333,6 +336,8 @@ body {
 
                     img {
                         display: block;
+                        float: left;
+                        width: 50%;
                         margin-top: 18px;
                         margin-left: 5%;
                         width: 150px;
@@ -342,10 +347,10 @@ body {
 
                     .data {
                         display: block;
-                        position: relative;
-                        top: -118px;
-                        left: 41%;
-
+                        float: left;
+                        width: 50%;
+                        padding-top: 50px;
+                        padding-left: 2%;
                         h4 {
                             font-size: 25px;
                         }
@@ -400,7 +405,7 @@ body {
                     height: 100px;
                     float: left;
 
-                    .required-form{
+                    .required-form {
                         display: block;
                         color: red;
                         margin-bottom: 20px;
@@ -507,7 +512,7 @@ body {
     }
 }
 
-footer{
+footer {
     display: block;
     font-family: "Banks";
     width: 100%;
@@ -515,15 +520,22 @@ footer{
     background-color: #444;
     color: white;
     text-align: center;
-    
-    p{
+
+    p {
         display: block;
         width: 80%;
         margin: 0px auto;
         padding-top: 30px;
 
-        a{
+        a {
             color: #ccc;
         }
     }
+}
+
+
+//Responsive
+
+@media (max-width: 1170px) {
+    
 }
