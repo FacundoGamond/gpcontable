@@ -351,6 +351,7 @@ body {
                         width: 50%;
                         padding-top: 50px;
                         padding-left: 2%;
+
                         h4 {
                             font-size: 25px;
                         }
@@ -536,6 +537,32 @@ footer {
 
 //Responsive
 
-@media (max-width: 1170px) {
-    
+@media (max-width: 1046px) {
+    #services {
+        height: 1500px !important;
+        overflow: hidden;
+
+        article {
+            width: 48% !important;
+        }
+
+        .special-card{
+            top: -64px !important;
+        }
+    }
+
+    #about {
+        height: 1000px !important;
+        #info {
+            #persons {
+                .person {
+                    float: none;
+                    clear: both;
+                    width: 80% !important;
+                    margin: 0px auto;
+                }
+            }
+        }
+    }
+
 }
