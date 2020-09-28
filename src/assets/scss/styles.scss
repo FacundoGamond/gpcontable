@@ -741,7 +741,16 @@ footer {
 
         }
     }
+}
 
+@media (max-width: 371px){
+    #logo {
+        
+        p {
+            width: 40% !important;
+        }
+
+    }
 }
 
 /* Importing Bootstrap SCSS file. */
