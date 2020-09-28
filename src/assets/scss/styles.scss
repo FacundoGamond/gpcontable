@@ -65,7 +65,7 @@ body {
     top: 90%;
     right: 20px;
     transition: 300ms all;
-    z-index: 90;
+    z-index: 90 !important;
 
     a {
         font-family: "Logos";
@@ -149,7 +149,7 @@ body {
         img {
             display: block;
             margin-top: 10px;
-            width: 30px;
+            width: 68px;
             padding: 10px;
             border: 1px solid white;
             border-radius: 5px;
@@ -224,13 +224,20 @@ body {
     #home {
         display: block;
         width: 90%;
-        height: 100vh;
+        height: 100%;
         padding-top: 100px;
+        margin-bottom: 400px !important;
 
-        carousel {
+        ngb-carousel {
             display: block;
-            margin-left: 5.3%;
-            z-index: 88;
+            margin: 0px auto;
+            margin-left: 10% !important;
+
+            img {
+                display: block;
+                width: 100%;
+                filter:brightness(0.6);
+            }
         }
     }
 
@@ -241,6 +248,7 @@ body {
         margin: 0px auto;
         padding-top: 100px;
         padding-bottom: 100px;
+        margin-bottom: 400px !important;
 
         h2 {
             font-family: "Banks";
@@ -280,6 +288,9 @@ body {
             }
 
             h3 {
+                display: block;
+                position: relative;
+                top: -65px;
                 font-size: 25px;
                 text-align: center;
                 margin-bottom: 20px;
@@ -293,8 +304,8 @@ body {
                 margin: 0px auto;
                 text-align: left;
                 position: relative;
-                top: -60px;
-                padding-left: 5%;
+                top: -100px !important;
+                padding-left: 5% !important;
                 padding-right: 5% !important;
                 transform: translateX(-100%);
                 opacity: 0;
@@ -303,7 +314,9 @@ body {
             }
 
             .special-card {
-                top: -100px;
+                //position: relative;
+                top: -138px !important;
+
             }
         }
 
@@ -332,10 +345,11 @@ body {
     #about {
         display: block;
         width: 90%;
-        height: 100vh;
+        height: 100%;
         margin: 0px auto;
         padding-top: 100px;
         padding-bottom: 100px;
+        margin-bottom: 200px;
 
         h2 {
             font-family: "Banks";
@@ -416,7 +430,7 @@ body {
     #contact {
         display: block;
         width: 90%;
-        height: 100vh;
+        height: 100%;
         margin: 0px auto;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -558,13 +572,15 @@ body {
 
 footer {
     display: block;
+    position: relative;
+    bottom: 0px;
     font-family: "Banks";
     width: 100%;
     height: 80px;
     background-color: #444;
     color: white;
     text-align: center;
-    z-index: 99;
+    z-index: 99 !important;
 
     p {
         display: block;
@@ -635,6 +651,24 @@ footer {
 
         }
     }
+
+    ngb-carousel {
+
+        img {
+            width: auto !important;
+            height: 550px;
+        }
+    }
+
+    footer{
+        height: 90px;
+        font-size: 15px;
+
+        p{
+            padding-top: 20px;
+        }
+
+    }
 }
 
 @media (max-width: 628px) {
@@ -685,10 +719,12 @@ footer {
     #about {
         .person {
             border-radius: 100px 10px 10px 100px !important;
+
             .data {
                 width: 35% !important;
-                h4{
-                   font-size: 20px !important;
+
+                h4 {
+                    font-size: 20px !important;
                 }
 
             }
@@ -707,3 +743,6 @@ footer {
     }
 
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

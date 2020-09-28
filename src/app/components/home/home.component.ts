@@ -7,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public images: any;
-  constructor() { }
+  constructor() {
+    this.images = [
+      '../../assets/images/1.jpg',
+      '../../assets/images/2.jpg',
+      '../../assets/images/3.jpg',
+      '../../assets/images/4.jpg'
+    ]
+  }
 
   ngOnInit(): void {
-
-    this.images = [
-      { path: '../../assets/images/1.jpg' },
-      { path: '../../assets/images/2.jpg' },
-      { path: '../../assets/images/3.jpg' },
-
-    ]
   }
 
 }
