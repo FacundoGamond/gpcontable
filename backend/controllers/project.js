@@ -40,8 +40,8 @@ var controller = {
                 <h4 style="padding-left: 80px;">Telefono: ${emailData.phone}</h4>
                 <h4 style="padding-left: 80px;">Email: ${emailData.email}</h4>
                 <hr>
-                <h4 style="padding-left: 40px;">Consulta</h4>
-                <p style="padding-left: 80px;">${emailData.consult}</p>
+                <h2 style="padding-left: 40px;">Consulta</h2>
+                <p style="display:block; padding-left: 80px; margin-bottom: 100px;">${emailData.consult}</p>
                 <h5 style="display: block; width: 100%; text-align: center;">Powered by Facundo Gamond</h5>
             </div>
             `
