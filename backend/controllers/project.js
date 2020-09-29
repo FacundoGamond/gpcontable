@@ -31,7 +31,20 @@ var controller = {
             from: "Gestor de consulta", // sender address
             to: process.env.TO, // list of receivers
             subject: "Consulta de " + emailData.name + " " + emailData.lastName,
-            text: "Telefono: " + emailData.phone + " email: " + emailData.email
+            text: "Telefono: " + emailData.phone + " email: " + emailData.email + "Consulta:" + emailData.consult,
+            html: `
+            <div style="background-color: #444; border: 2px solid #ccc; border-radius: 10px; padding: 0px; margin: 0px;">
+                <h1 style="display:block; margin: 0px; padding: 0px; width: 100%; text-align: center; height: 120px; line-height: 120px; background-color: rgb(255, 255, 87) !important; border-bottom: 2px solid #ccc">Consulta Nueva!</h1>
+                <h2 style="padding-left: 40px;">Datos de prospecto</h2>
+                <h4 style="padding-left: 80px;">Nombre: ${emailData.name} ${emailData.lastName}</h4>
+                <h4 style="padding-left: 80px;">Telefono: ${emailData.phone}</h4>
+                <h4 style="padding-left: 80px;">Email: ${emailData.email}</h4>
+                <hr>
+                <h4 style="padding-left: 40px;">Consulta</h4>
+                <p style="padding-left: 80px;">${emailData.consult}</p>
+                <h5 style="display: block; width: 100%; text-align: center;">Powered by Facundo Gamond</h5>
+            </div>
+            `
         }
 
         //Send email
