@@ -65,7 +65,7 @@ body {
     top: 88%;
     left: 4%;
     transition: 300ms all;
-    //z-index: 90 !important;
+    z-index: 999998;
 
     a {
         display: block;
@@ -73,7 +73,7 @@ body {
         font-size: 50px;
         cursor: pointer;
         text-decoration: none;
-        //z-index: 200 !important;
+        z-index: 999999;
         transition: 300ms all;
     }
 }
