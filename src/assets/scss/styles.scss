@@ -60,26 +60,14 @@ body {
 }
 
 #socialmedia {
-    display: block;
-    position: fixed;
-    top: 88%;
-    left: 4%;
-    transition: 300ms all;
-    z-index: 999998;
-
-    a {
-        display: block;
+        position: fixed;
+        top: 80%;
+        left: 4%;
         font-family: "Logos";
         font-size: 50px;
         cursor: pointer;
-        text-decoration: none;
-        z-index: 999999;
-        transition: 300ms all;
-    }
-}
-
-#socialmedia:hover {
-    transform: scale(1.1);
+        z-index: 999999 !important;
+    
 }
 
 #header {
