@@ -65,13 +65,15 @@ body {
     top: 88%;
     left: 4%;
     transition: 300ms all;
-    z-index: 90 !important;
+    //z-index: 90 !important;
 
     a {
+        display: block;
         font-family: "Logos";
         font-size: 50px;
         cursor: pointer;
         text-decoration: none;
+        //z-index: 200 !important;
         transition: 300ms all;
     }
 }
