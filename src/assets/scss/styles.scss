@@ -237,7 +237,7 @@ body {
                 display: block;
                 width: 100%;
                 height: 500px;
-                filter:brightness(0.6);
+                filter: brightness(0.6);
             }
         }
     }
@@ -270,7 +270,7 @@ body {
             width: 23%;
             margin: 1%;
             background-color: $titlesColor;
-            height: 340px;
+            height: 200px;
             border-radius: 5px;
             box-shadow: 0px 0px 10px #444;
             color: white;
@@ -280,9 +280,9 @@ body {
             span {
                 display: block;
                 margin: 0px auto;
-                margin-top: 20px;
+                margin-top: -25px;
                 font-family: "Breezi";
-                font-size: 200px;
+                font-size: 150px;
                 text-align: center;
                 color: white;
                 transition: 500ms all;
@@ -291,12 +291,13 @@ body {
             h3 {
                 display: block;
                 position: relative;
-                top: -65px;
-                font-size: 25px;
+                top: -66px;
+                font-size: 20px;
                 text-align: center;
                 margin-bottom: 20px;
                 opacity: 1;
                 transition: 200ms all;
+                padding: 10px;
             }
 
             p {
@@ -305,19 +306,23 @@ body {
                 margin: 0px auto;
                 text-align: left;
                 position: relative;
-                top: -100px !important;
+                top: -77px !important;
                 padding-left: 5% !important;
                 padding-right: 5% !important;
                 transform: translateX(-100%);
                 opacity: 0;
                 transition: 300ms all;
+                font-size: 14px;
 
             }
 
             .special-card {
                 //position: relative;
-                top: -138px !important;
+                top: -83px !important;
+            }
 
+            #special-card {
+                top: -105px !important;
             }
         }
 
@@ -325,15 +330,16 @@ body {
             transform: scale(1.05);
             background-color: white;
             color: black;
-            height: 340px;
 
             span {
                 color: black;
-                font-size: 150px;
+                font-size: 100px;
+                margin-top: -20px;
             }
 
             h3 {
                 opacity: 0;
+                margin-bottom: 0px;
             }
 
             p {
@@ -661,11 +667,11 @@ footer {
         }
     }
 
-    footer{
+    footer {
         height: 90px;
         font-size: 15px;
 
-        p{
+        p {
             padding-top: 20px;
         }
 
@@ -744,9 +750,9 @@ footer {
     }
 }
 
-@media (max-width: 371px){
+@media (max-width: 371px) {
     #logo {
-        
+
         p {
             width: 40% !important;
         }
