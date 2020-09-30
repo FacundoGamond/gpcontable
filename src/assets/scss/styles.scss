@@ -59,15 +59,21 @@ body {
     border-bottom: 4px solid white;
 }
 
+
 #socialmedia {
-        position: fixed;
-        top: 80%;
-        left: 4%;
-        font-family: "Logos";
-        font-size: 50px;
-        cursor: pointer;
-        z-index: 999999 !important;
-    
+    position: fixed;
+    top: 88%;
+    right: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-family: a;
+    cursor: pointer;
+    z-index: 98 !important;
+
+    img{
+        width: 50px;
+    }
+
 }
 
 #header {
@@ -235,7 +241,7 @@ body {
     #services {
         display: block;
         width: 90%;
-        height: 100vh;
+        height: 100%;
         margin: 0px auto;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -577,7 +583,7 @@ footer {
     background-color: #444;
     color: white;
     text-align: center;
-    z-index: 99 !important;
+    z-index: 99;
 
     p {
         display: block;
@@ -669,11 +675,20 @@ footer {
 }
 
 @media (max-width: 628px) {
-    #services {
-        .special-card {
-            top: -100px !important;
+    .center{
+        #home{
+            margin-bottom: 200px !important;
+        }
+
+        #services {
+            margin-bottom: -1000px !important;
+    
+            .special-card {
+                top: -100px !important;
+            }
         }
     }
+    
 
     #about {
         #info {
